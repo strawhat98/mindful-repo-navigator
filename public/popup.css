@@ -1,0 +1,15 @@
+
+@import '../src/index.css';
+
+body {
+  width: 380px;
+  height: 580px;
+  margin: 0;
+  padding: 0;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: hidden;
+}
+
+#popup-root {
+  height: 100%;
+}
