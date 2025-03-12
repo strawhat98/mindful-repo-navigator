@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../assets/logo.svg';
 import { motion } from 'framer-motion';
+import CodeExplainer from '../components/CodeExplainer';
 
 const Index = () => {
   const [loaded, setLoaded] = useState(false);
@@ -106,6 +107,16 @@ const Index = () => {
               This extension is currently in development. Visit our GitHub repository for updates.
             </p>
           </div>
+        </motion.div>
+
+        {/* Code Explainer Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: loaded ? 1 : 0, y: loaded ? 0 : 20 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          className="mt-8"
+        >
+          <CodeExplainer />
         </motion.div>
         
         <footer className="mt-12 text-center text-sm text-muted-foreground">
